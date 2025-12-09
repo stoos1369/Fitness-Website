@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+         // 🚀⚠️ 最重要：GitHub Pages 路徑設定
+         base: '/Fitness-Website/',
+        
       server: {
         port: 3000,
         host: '0.0.0.0',
